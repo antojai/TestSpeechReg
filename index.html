@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+
+<script>
+window.onload = function(){
+    if (annyang) {
+        var commands = {
+            'Hello': function() {
+                alert('Hi! I can hear you.');
+            }
+        };
+        annyang.addCommands(commands);
+        annyang.start(); 
+    }
+}
+</script>
+</body>
+</html>
